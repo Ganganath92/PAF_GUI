@@ -28,8 +28,8 @@
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	crossorigin="anonymous">
 
-<script src="Components/jquery-3.5.0.min.js"></script>
-<script src="Components/Funder.js"></script>
+<script src="Component/jquery-3.5.0.min.js"></script>
+<script src="Component/Funder.js"></script>
 
 
 

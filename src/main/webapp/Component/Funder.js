@@ -26,7 +26,7 @@ $(document).on("click", "#btnSave", function(event) {
    
 	var type = ($("#id").val() == "") ? "POST" : "PUT";
 	$.ajax({
-		url : "FunderAPI",
+		url : "FunderManagementAPI",
 		type : type,
 		data : $("#FUNDER").serialize(),
 		dataType : "text",
@@ -75,7 +75,7 @@ $(document).on("click", ".btnRemove", function(event) {
 
 	
 	$.ajax({
-		url : "FunderAPI",
+		url : "FunderManagementAPI",
 		type : "DELETE",
 		data : "id=" + event.target.value,
 		dataType : "text",

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 public class FunderManagementAPI extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	FunderManagement funderObject = new FunderManagement();
+	FunderManagement funder_ob  = new FunderManagement();
 	
     public FunderManagementAPI() {
         super();
@@ -34,7 +34,7 @@ public class FunderManagementAPI extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String outputString = funderObject.createPost(
+		String outputString = funder_ob .createPost(
 				request.getParameter("title"), 
 				request.getParameter("content"),
 				request.getParameter("pdate"), 
@@ -49,7 +49,7 @@ public class FunderManagementAPI extends HttpServlet {
 		
 		Map paras = getParasMap(request); 
 		
-		String output = funderObject.updateItem(
+		String output = funder_ob .updateItem(
 				paras.get("id").toString(), 
 				paras.get("title").toString(), 
 				paras.get("content").toString(), 
@@ -92,7 +92,7 @@ public class FunderManagementAPI extends HttpServlet {
 		// TODO Auto-generated method stub
 		Map paras = getParasMap(request);
 		
-		 String output = funderObject.deleteItem(paras.get("id").toString()); 
+		 String output = funder_ob.deleteItem(paras.get("id").toString()); 
 		response.getWriter().write(output);
 	}
 
